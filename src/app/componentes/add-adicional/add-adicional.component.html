@@ -1,0 +1,24 @@
+<form (ngSubmit)="onCreateA()" novalidate #f='ngForm'>
+    <div class="form-group mb-3 mt-3 text-white">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombreA">
+    </div>
+    <div class="form-group mb-3 text-white">
+      <label for="precioA" class="form-label">Precio 1</label>
+      <input type="text" class="form-control" id="precioA" name="precioA" [(ngModel)]="precioA">
+    </div>
+    <div class=" form-group mb-3 text-white">
+        <label for="precioB" class="form-label">Precio 2</label>
+        <input type="text" class="form-control" id="precioB" name="precioB" [(ngModel)]="precioB">
+    </div>
+    <div class="form-group mb-3 text-white">
+        <label for="precioEnvio" class="form-label">Precio envío</label>
+        <input type="text" class="form-control" id="precioEnvio" name="precioEnvio" [(ngModel)]="precioEnvio">
+    </div>
+    <div class="form-group mb-3 text-white">
+        <label for="precioEnvioDos" class="form-label">Precio envío 2</label>
+        <input type="text" class="form-control" id="precioEnvioDos" name="precioEnvioDos" [(ngModel)]="precioEnvioDos">
+    </div>
+   
+    <button type="submit" class="btn btn-warning text-white px-4">Guardar</button>
+  </form>

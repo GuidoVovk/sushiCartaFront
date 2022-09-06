@@ -1,0 +1,20 @@
+<form (ngSubmit)="onCreate()" novalidate #f='ngForm'>
+    <div class="form-group mb-3 mt-3 text-white">
+      <label for="nombreCombo" class="form-label">Nombre Combo</label>
+      <input type="text" class="form-control" id="nombreCombo" name="nombreCombo" [(ngModel)]="nombreCombo" required>
+    </div>
+    <div class="form-group mb-3 text-white">
+      <label for="cantidad" class="form-label">Cantidad de piezas</label>
+      <input type="text" class="form-control" id="cantidad" name="cantidad" [(ngModel)]="cantidad">
+    </div>
+    <div class=" form-group mb-3 text-white">
+        <label for="nombreRolls" class="form-label">Rolls incluidos</label>
+        <input type="text" class="form-control" id="nombreRolls" name="nombreRolls" [(ngModel)]="nombreRolls" required>
+    </div>
+    <div class="form-group mb-3 text-white">
+        <label for="precio" class="form-label">Precio</label>
+        <input type="text" class="form-control" id="precio" name="precio" [(ngModel)]="precioCombo">
+    </div>
+   
+    <button type="submit" class="btn btn-warning text-white px-4">Guardar</button>
+  </form>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+span{
+    font-family: 'Lobster', cursive;
+    color:  rgb(255, 170, 0);
+    font-size: 1.3rem;
+}
+
+h4{
+    color: black;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.338);
+    box-shadow: 0 0 10px black;
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.lista li{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.lista li:hover{
+    color: yellow;
+    transform: scale(1.2);
+}
+
+.lista li a{
+    color: rgba(85, 80, 80, 0.979);
+    text-decoration: none;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}

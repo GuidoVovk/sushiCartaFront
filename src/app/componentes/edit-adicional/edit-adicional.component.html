@@ -1,0 +1,36 @@
+<br>
+<br>
+<div class="row justify-content-md-center">
+  <div class="col col-lg-4 col-md-6 col-sm-12">
+<div class="formulario">
+  
+      <form (ngSubmit)="onUpdate()" novalidate #f='ngForm'>
+        <div class="d-flex justify-content-between align-items-center form-group mb-3 mt-3 text-white">
+          <label for="nombre" class="form-label me-3">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="adicional.nombreA">
+        </div>
+        <div class="d-flex justify-content-between align-items-center form-group mb-3 text-white">
+          <label for="precioA" class="form-label">Palitos y salsa de soja  $</label>
+          <input type="text" class="form-control" id="precioA" name="precioA" [(ngModel)]="adicional.precioA">
+        </div>
+        <div class="d-flex justify-content-between align-items-center form-group mb-3 text-white">
+          <label for="precioB" class="form-label">Wasabi y jengibre </label>
+          <input type="text" class="form-control" id="precioB" name="precioB" [(ngModel)]="adicional.precioB">
+        </div>
+        <div class="d-flex justify-content-between align-items-center form-group mb-3 text-white">
+          <label for="precioEnvio" class="form-label">Envío a domiciilio  $</label>
+          <input type="text" class="form-control" id="precioEnvio" name="precioEnvio"
+            [(ngModel)]="adicional.precioEnvio">
+        </div>
+        <div class="d-flex justify-content-between align-items-center form-group mb-3 text-white">
+          <label for="precioEnvioDos" class="form-label">Envío sin cargo para pedidos mayores a  $</label>
+          <input type="text" class="form-control" id="precioEnvioDos" name="precioEnvioDos"
+            [(ngModel)]="adicional.precioEnvioDos">
+        </div>
+
+        <button type="submit" class="btn btn-warning text-white px-4">Guardar</button>
+        <button class="btn float-end text-secondary" routerLink="/carta">Volver</button>
+      </form>
+    </div>
+  </div>
+</div>

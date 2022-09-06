@@ -1,0 +1,23 @@
+.formulario{
+    background-color: rgba(21, 12, 39, 0.805);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+#precioA{
+   width: 6rem;  
+}
+
+#precioB{
+    width: 6rem;  
+}
+
+#precioEnvio{
+    width: 6rem;  
+}
+
+#precioEnvioDos{
+    width: 6rem;  
+}
